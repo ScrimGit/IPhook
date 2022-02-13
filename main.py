@@ -2,7 +2,7 @@ import socket
 import os
 import requests
 
-webhookURL = 'https://discord.com/api/webhooks/942477543959822366/MKgU8xRNSCMBPIy4S7lqXZZQcNwO_HV4a2VikNxMNejTokg1>'
+webhookURL = 'your-discord-webhook'
 gw = os.popen("ip -4 route show default").read().split()
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect((gw[2], 0))
