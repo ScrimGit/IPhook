@@ -11,5 +11,5 @@
 #
 # By default this script does nothing.
 
-sudo python3 /home/ubuntu/ip-webhook/main.py &
+sudo python3 /home/pi/disc-IP-webhook/main.py &
 exit 0
