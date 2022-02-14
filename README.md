@@ -1,8 +1,5 @@
-# disc-IP-webhook
-Discord webhook to send raspberry pi IP on boot
-to use:
-replace webhook with you're webhook link from discord
-then git clone this repo
-adding launch on boot instructions in a bit,,
-i will try to make a script!
-if not.... installing this will be easy :)
+# RPIipHook > A Service to send IP Adress to you're Discord Webhook on boot for: Raspbian (Or Debian) Systems
+
+i Will be adding a how to on installing this service*
+i will be updating README.md (it is definetily outdated rightnow)
+however for now anything you need is in install.txt

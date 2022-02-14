@@ -1,0 +1,32 @@
+Temporary Install Instructions
+First of all clone the git directory with:
+# git clone https://github.com/ScrimGit/RPIipHook.git
+
+1. Create the service.
+   # sudo systemctl --force --full edit SilentIpBot.service
+
+
+Content for SilentIpBot.service:
+#######################################################################################
+
+[Unit]
+Description=SilentIpBot
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/RPIipHook/iphook.py
+
+[Install]
+WantedBy=multi-user.target
+
+########################################################################################
+
+2. Enable and check the service.
+   # sudo systemctl enable SilentIpBot.service
+   # systemctl status SilentIpBot.service
+
+Notes:
+1. Remember to change the webhook url in iphook.py to you're Discord Webhook URL!
+2. Remember to change the path to the iphook.py file (if you clone into home with default Raspberry Pi User you dont have to!)
+3. Remember in a day or two all of these files will be updated to their (mostly)final form and this will all be way easier / better
+                                                
