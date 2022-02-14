@@ -1,0 +1,23 @@
+start of script uwu
+
+#Create the service
+sudo systemctl --force --full edit RPIipHook.service
+
+
+#iphook.service -> put this in
+#######################################################################################
+[unit]
+Description=UwU Oh hi there, Don't mind me. I'm just sending you you're IP at boot...
+After=multi.user.target
+
+[Service]
+Execstart=user/bin/python3 /home/pi/RPIipHook/iphook.py
+
+[Install]
+Wantedby=multi.user.target
+
+########################################################################################
+
+#enable and monitor the service
+sudo systemctl enable RPIipHook.service
+systemctl status RPIipHook.service

@@ -9,13 +9,13 @@ s.connect((gw[2], 0))
 ipaddr = s.getsockname()[0]
 gateway = gw[2]
 host = socket.gethostname()
-print ("IP:", ipaddr, " GW:", gateway, " Host:", host)
+# print ("IP:", ipaddr, " GW:", gateway, " Host:", host)
 
 data = {
     'username': 'Silent IP Bot',
     'embeds': [{
         'color': 3066993,
-        'title': 'Silence is up!',
+        'title': 'Host is up, Have fun!',
         'description': '**hostname: **' + host + '\n' + '**IP: **' + ipaddr + '\n' + '**Gateway: **' + gateway,
     }]
 }
