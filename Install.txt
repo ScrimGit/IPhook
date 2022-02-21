@@ -14,7 +14,7 @@ Description=IPhook!, I'm Alive! so i'm sending you my IP!
 After=multi-user.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/pi/IPHook/iphook.py
+ExecStart=/usr/bin/python3 /home/pi/IPhook/iphook.py
 
 [Install]
 WantedBy=multi-user.target
