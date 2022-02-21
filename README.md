@@ -1,6 +1,6 @@
-# RPIipHook!
-#### A Service to send IP Adress to you're Discord Webhook on boot for: Raspbian (Or Debian) Systems
+# IPhook!
+#### A Service to send current IP Adress to Discord Webhooks on boot for: Raspbian (Or Debian) Systems
 
-i Will be adding a how to on installing this service*
+In install.txt you will find how to install this service!
 i will be updating README.md (it is definetily outdated rightnow)
-however for now anything you need is in install.txt
+for now use install.txt for a simple how to!
