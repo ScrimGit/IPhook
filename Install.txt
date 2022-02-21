@@ -3,18 +3,18 @@ First of all clone the git directory with:
 # git clone https://github.com/ScrimGit/RPIipHook.git
 
 1. Create the service.
-   # sudo systemctl --force --full edit SilentIpBot.service
+   # sudo systemctl --force --full edit IPhook.service
 
 
 Content for SilentIpBot.service:
 #######################################################################################
 
 [Unit]
-Description=SilentIpBot
+Description=IPhook!
 After=multi-user.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/pi/RPIipHook/iphook.py
+ExecStart=/usr/bin/python3 /home/pi/IPHook/iphook.py
 
 [Install]
 WantedBy=multi-user.target
@@ -22,8 +22,8 @@ WantedBy=multi-user.target
 ########################################################################################
 
 2. Enable and check the service.
-   # sudo systemctl enable SilentIpBot.service
-   # systemctl status SilentIpBot.service
+   # sudo systemctl enable IPhook.service
+   # systemctl status IPhook.service
 
 Notes:
 1. Remember to change the webhook url in iphook.py to you're Discord Webhook URL!
