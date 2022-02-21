@@ -10,7 +10,7 @@ Content for SilentIpBot.service:
 #######################################################################################
 
 [Unit]
-Description=IPhook!, I'm Alive! so i'm sending you my IP!
+Description=IPhook!
 After=multi-user.target
 
 [Service]
