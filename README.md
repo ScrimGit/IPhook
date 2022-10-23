@@ -4,7 +4,7 @@
 IP-Hook is a small service written in python to send your IP-Adress on boot to a Discord webhook
 (Maybe even more webhooks?), I made this little service for a raspberry pi without a display, Since I needed the IP-Adress on boot for SSHing into it. Now this should work on any Debian based system like Raspbian.
 
-## Setting up IP-Hook for yourself!
+## Setting up IP-Hook
 
 Step 1: Cloning the Git Repository:
   ````bash
