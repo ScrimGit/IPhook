@@ -12,7 +12,7 @@ host = socket.gethostname()
 # print ("IP:", ipaddr, " GW:", gateway, " Host:", host)
 
 data = {
-    'username': 'Silent IP Bot',
+    'username': 'Captain IP Hook',
     'embeds': [{
         'color': 3066993,
         'title': 'Host is up, Have fun!',
