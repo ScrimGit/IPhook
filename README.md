@@ -12,7 +12,12 @@ git clone https://github.com/ScrimGit/IPhook
 ````
 <br/>
 
-Step 2: Create the IP-Hook Service
+Step 2: Configuring The Webhook URL,
+Navigate to the directory you installed IPHook in and use a text editor like NANO to edit the iphook,py file located like this /*Your Path*/IPhook/iphook.py
+
+<br/>
+
+Step 3: Create the IP-Hook Service
 ````bash
 sudo systemctl --force --full edit IPhook.service
 ````
