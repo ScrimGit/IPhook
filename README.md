@@ -1,51 +1,45 @@
-# IP-Hook
+# IP Hook
 
-## What is IP-Hook
-IP-Hook is a small service written in python to send your IP-Adress on boot to a Discord webhook
-(Maybe even more webhooks?), I made this little service for a raspberry pi without a display, Since I needed the IP-Adress on boot for SSHing into it. Now this should work on any Debian based system like Raspbian.
+IP Hook is a simple Python script that sends your device's IP address and hostname to a specified Discord webhook URL on boot. This can be useful for keeping track of the IP addresses of remote devices, or for quickly checking the IP address of a device on your local network.
 
-## Setting up IP-Hook
+## Getting Started
 
-Step 1: Cloning the Git Repository:
-  ````bash
-git clone https://github.com/ScrimGit/IPhook
-````
-<br/>
+These instructions will help you run the script on your local machine and set up the webhook URL.
 
-Step 2: Configuring The Webhook URL,
-Navigate to the directory you installed IPHook in and use a text editor like NANO to edit the iphook,py file located like this /*Your Path*/IPhook/iphook.py
+### Prerequisites
 
-<br/>
+- Python 3.6 or later
+- Requests library (can be installed with pip)
 
-Step 3: Create the IP-Hook Service
-````bash
-sudo systemctl --force --full edit IPhook.service
-````
-<br/>
+### Installation
 
-This wil open the editor where you have to paste these contents with your own paths
-Here are the Default contents to paste in and edit with your own paths
-```bash
-[Unit]
-Description=IPhook **Hooked, matey!
-After=multi-user.target
+1. Clone this repository to your local machine.
+2. Open the `iphook.py(iphook2.py)` file in your favorite text editor.
+3. Replace `your-discord-webhook` on line 4 with the URL of the Discord webhook you want to send the IP address to.
+4. Save the file.
 
-[Service]
-ExecStart=/usr/bin/python3 /home/pi/IPhook/iphook.py
+### Usage
 
-[Install]
-WantedBy=multi-user.target
-```
-<br/>
+To use Captain IP Hook, simply run the script in a terminal or command prompt:
 
-Step 3: Enable and check the Service:
-   ````bash
-sudo systemctl enable IPhook.service
-sudo systemctl status IPhook.service
-````
-<br/>
+sudo python3 iphook.py (iphook2.py)
 
-Notes: 
-1. Remember to change the webhook url in iphook.py to your own webhook URL!
-2. Remember to change the path to the iphook.py file in the iphook service!
-3. Tested with a Discord webhook maybe different webhooks work like Slack, telegram etc.
+The script will send the device's IP address, hostname, and gateway address to the specified Discord webhook.
+
+### Discord Webhook Setup
+
+To set up a Discord webhook for Captain IP Hook, follow these steps:
+
+1. In Discord, right-click on the server you want to add the webhook to and select **Server Settings**.
+2. Click on **Integrations** in the sidebar.
+3. Click on **Webhooks** and then **Create Webhook**.
+4. Enter a name for the webhook and select the channel you want the messages to appear in.
+5. Copy the webhook URL and paste it into the `webhookURL` variable in the `captain_ip_hook.py` file.
+
+### Contributing
+
+If you find any issues with the script or have suggestions for improvement, please feel free to open an issue or submit a pull request.
+
+#### License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
